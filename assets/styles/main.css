@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "IosevkaMedium";
+    src: url("../fonts/iosevka-ss18-medium.woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "IosevkaHeavy";
+    src: url("../fonts/iosevka-ss18-heavy.woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "IosevkaExtraLight";
+    src: url("../fonts/iosevka-ss18-extralight.woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* reset all elements (to remove whitespace introduced by browsers etc) */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body, html {
+    height: 100%;
+    background-color: #1B0B1B;
+}
+
+.main {
+    background-color: #2D132C;
+    margin-top: 2.5vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    height: 100%;
+}
+
+h1 {
+    font-size: 128px;
+}
+
+h2 {
+    font-size: 64px;
+}
+
+.header {
+    color: #EE4540;
+    font-family: "IosevkaHeavy";
+    text-align: center;
+    padding-top: 20px;
+}
+
+.separator {
+    height: 5px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #610E29;
+}
+
+.bio {
+    color: #C72C41;
+    font-family: "IosevkaMedium";
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.content-wrapper {
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.projects, .posts {
+    width: 40%;
+    border-radius: 16px;
+    border: 5px;
+    border-style: solid;
+    border-color: #801336;
+
+    padding-bottom: 20px;
+}
