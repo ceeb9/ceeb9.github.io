@@ -35,12 +35,18 @@ body, html {
     background-color: #1B0B1B;
 }
 
-.main {
+.block {
     background-color: #2D132C;
-    margin-top: 2.5vw;
-    margin-left: 2.5vw;
-    margin-right: 2.5vw;
-    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 30px;
+    width: 80%;
+    border: 3px;
+    border-radius: 32px;
+    border-style: solid;
+    border-color: #372136;
 }
 
 h1 {
@@ -55,7 +61,6 @@ h2 {
     color: #EE4540;
     font-family: "IosevkaHeavy";
     text-align: center;
-    padding-top: 20px;
 }
 
 .separator {
@@ -73,21 +78,19 @@ h2 {
     font-family: "IosevkaMedium";
     font-size: 32px;
     text-align: center;
-    margin-bottom: 80px;
 }
 
-.content-wrapper {
-    width: 100%;
+.content-block {
     justify-content: space-evenly;
     display: flex;
 }
 
 .projects, .posts {
-    width: 40%;
-    border-radius: 16px;
     border: 5px;
+    border-radius: 16px;
     border-style: solid;
     border-color: #801336;
-
-    padding-bottom: 20px;
+    width: 40%;
+    min-height: 400px;
+    padding-top: 10px;
 }
