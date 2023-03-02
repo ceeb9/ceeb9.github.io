@@ -6,41 +6,42 @@
         <meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="assets/main.css">
-        <link rel="stylesheet" href="assets/background-gradient.css">
+        <link rel="stylesheet" href="assets/homepage.css">
         <title>ceeb</title>
     </head>
     <body>
-
-        <div class="block">
-            <div class="header">
-                <h1 style="font-size: 128px;">hey, i'm ceeb.</h1>
+        <div class="scroll-block-wrapper">
+            <div class="scroll-progress-bar">
             </div>
-            <div class="separator"></div>
-            <div class="bio">
-                i'm a computer science student living in melbourne.
-            </div>
-        </div>
-
-        <div class="block content-block">
-
-            <div class="header projects">
-                <h2 style="font-size: 64px;">projects</h2>
-                <div class="separator"></div>
-            </div>
-
-            <div class="header posts">
-                <h2 style="font-size: 64px;">posts</h2>
-                <div class="separator"></div>
-                <ul>
-                    {% for post in site.posts limit:3 %}
-                      <li>
-                        <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%-d %b %Y" }}
-                        <div class="post-excerpt">{{post.excerpt}}</div>
-                      </li>
-                    {% endfor %}
-                </ul>
-                        <a style="color: #EE4540; position: absolute; bottom: 0; margin-bottom: 10px;" href="/posts">...</a>
+            <div class="block-wrapper">
+                <div class="block title">
+                    <h1 style="font-size: 128px;">hey, i'm ceeb.</h1>
+                    <div class="separator"></div>
+                    <div class="bio">
+                        i'm a computer science student living in melbourne.
+                    </div>
                 </div>
+
+                <div class="block projects">
+                    <h2 class="header" style="font-size: 64px;">projects</h2>
+                    <div class="separator"></div>
+                </div>
+
+                <div class="block posts">
+                   <h2 class="header" style="font-size: 64px;">posts</h2>
+                   <div class="separator"></div>
+                   <ul>
+                       {% for post in site.posts limit:3 %}
+                         <li>
+                           <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%-d %b %Y" }}
+                           <div class="post-excerpt">{{post.excerpt}}</div>
+                         </li>
+                       {% endfor %}
+                   </ul>
+                           <a style="color: #EE4540; position: absolute; bottom: 0; margin-bottom: 10px;" href="/posts">...</a>
+                   </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>

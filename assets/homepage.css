@@ -1,0 +1,48 @@
+.scroll-block-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    height: 100%;
+    margin-top: 40px;
+}
+
+.block-wrapper {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.scroll-progress-bar {
+    width: 16px;
+    height: 100vh;
+    margin-left: 40px;
+    border: 1px;
+    border-style: solid;
+    border-color: var(--white);
+    border-radius: 4px;
+}
+
+.bio {
+    color: var(--grey);
+    font-family: "IosevkaLight";
+    font-size: 32px;
+}
+
+.title {
+    margin-right: 20px;
+    padding-top: 10px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.projects {
+    margin-right: 20px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.posts {
+    margin-right: 20px;
+    padding-top: 10px;
+    position: relative;
+}
