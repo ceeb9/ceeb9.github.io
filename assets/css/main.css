@@ -1,9 +1,4 @@
----
----
-@import "monokai.css";
 @import "fonts.css";
-@import "posts.css";
-@import "homepage.css";
 
 :root {
     --black: #000500;
@@ -24,7 +19,7 @@
     background: transparent;
 }
 
-body {
+html, body {
     background-color: var(--black);
 }
 
@@ -32,6 +27,17 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--green);
     font-family: "IosevkaRegular";
 }
+
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    color: var(--green);
+    font-family: "IosevkaHeavy";
+    font-size: 64px;
+}
+
 li {
     list-style: none;
 }
@@ -44,26 +50,20 @@ a, a:visited {
 p {
     color: var(--grey);
     font-family: "IosevkaLight";
+    font-size: 32px;
 }
 
 .block {
     background-color: var(--black);
-    padding: 30px;
-    width: 80%;
+    padding: 15px 30px 30px 30px;
     border: 1px;
     border-radius: 8px;
     border-style: solid;
     border-color: var(--white);
 }
 
-.header {
-    color: var(--green);
-    font-family: "IosevkaHeavy";
-}
-
 .separator {
     height: 4px;
-    width: 80%;
     margin-right: auto;
     margin-top: 10px;
     margin-bottom: 20px;
